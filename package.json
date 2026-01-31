@@ -1,0 +1,40 @@
+{
+  "name": "mysql-realtime-db",
+  "version": "0.1.0",
+  "description": "Realtime database layer for MySQL without binlog — application-level events and optional changelog triggers",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build",
+    "test:realtime": "node test/test-realtime.mjs",
+    "test:realtime:loop": "node test/test-realtime.mjs --loop",
+    "test:realtime:changelog": "node test/test-realtime.mjs --changelog"
+  },
+  "keywords": [
+    "mysql",
+    "realtime",
+    "websocket",
+    "database",
+    "live",
+    "sync"
+  ],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "mysql2": "^3.11.0",
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "@types/ws": "^8.5.13",
+    "typescript": "^5.7.0"
+  }
+}
