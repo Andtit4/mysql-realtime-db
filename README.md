@@ -1,4 +1,4 @@
-# mysql-realtime-db
+# mysql-realtime-server
 
 Couche base de données **temps réel** pour MySQL **sans binlog** : événements au niveau application et option changelog (triggers + table).
 
@@ -8,7 +8,7 @@ Couche base de données **temps réel** pour MySQL **sans binlog** : événement
 ## Installation depuis npm
 
 ```bash
-npm install mysql-realtime-db
+npm install mysql-realtime-server
 ```
 
 ## Installation en local (développement)
@@ -18,8 +18,8 @@ Si tu veux tester ou modifier le plugin localement :
 ### 1. Cloner et installer les dépendances
 
 ```bash
-git clone <url-du-repo>
-cd mysql-realtime-db
+git clone https://github.com/Andtit4/mysql-realtime-server.git
+cd mysql-realtime-server
 npm install
 ```
 
@@ -42,14 +42,14 @@ npm link
 
 Dans ton projet :
 ```bash
-npm link mysql-realtime-db
+npm link mysql-realtime-server
 ```
 
 **Option B : Chemin relatif**
 
 Dans ton projet :
 ```bash
-npm install ../chemin/vers/mysql-realtime-db
+npm install ../chemin/vers/mysql-realtime-server
 ```
 
 ### 4. Tester le plugin
